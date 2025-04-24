@@ -9,3 +9,8 @@ type physicalIO interface {
 	getInput()(chan []byte, error)
 }
 
+
+const (
+	recvQueueSize = 5000
+	frameMaxSize = 1526
+)
